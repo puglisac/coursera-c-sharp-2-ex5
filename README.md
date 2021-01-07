@@ -1,36 +1,36 @@
-# Exercise 4: For and Foreach Loops
+# Exercise 5: While Loops
 
 This is an exercise for the coursera course [More C# Programming and Unity](https://www.coursera.org/learn/more-programming-unity)
 
-### Getting Started
+### Problem 1 - Create and use a menu using a while loop
 
-Double-click the index file in the Help folder and click the ConsoleCards link in the pane on the left; this is the documentation for the classes I provided to you in the ConsoleCards dll.
+Start up your IDE and create a new Console Application project named Exercise5. Save the project in a reasonable location on the computer.
 
-### Problem 1 - Print numbers in user-selected range
+Create a menu of choices for your user. It should look like the following:
 
-Start up the IDE and create a new Console Application project named Exercise4. Save the project in a reasonable location on the computer.
+```
+Menu:
+1−NewGame
+2−LoadGame
+3−Options
+4−Quit
+```
 
-Prompt for and get lower and upper bounds for numbers to print.
+You should then prompt for and read in the user’s choice as an integer.
 
-Use a for loop to print the numbers between the lower and upper bound (inclusive)
+Your application should print an appropriate response confirming their choice, such as:
 
-### Problem 2 - Create objects
+`Loading  game...`
 
-Follow the instructions for your IDE from the Adding a DLL lecture to add the ConsoleCards.dll from the zip file as a reference for your project.
+If the user selects 4, you should stop the while loop and exit the application when the user presses enter.
 
-Inside the **Main** method, declare a deck variable and create a new **Deck** object for that variable.
+### Problem 2 - Implement input validation
 
-Inside the **Main** method, declare a list variable that will hold a hand of cards and create a new list object for that variable.
+Add a while loop that validates the user's input value before printing the appropriate message or quits the game. Although you could include this validation in your if statement and your outer while loop, use a while loop for this to get more practice with while loops.
 
-Tell the deck to shuffle itself.
+### Problem 3 - Refactor
 
-### Problem 3 - Deal and print the cards in a hand using for and foreach loops
-
-Use a for loop to deal 5 cards from the deck to the hand
-
-Use a for loop to flip all the cards in the hand over. Do NOT hard-code 5 as the upper limit of the loop.
-
-Use a foreach loop (not a for loop) to print all the cards in the hand (remember, the **Card** class exposes a **Print** method).
+Now that you've practiced using another while loop, delete the while loop from the previous problem and use your if statement and the outer while loop to implement the input validation.
  
 ## Installation
 To install, follow these steps:
@@ -42,6 +42,6 @@ Download and extract the zip file to a directory of your choice.
 
 Via command line:
 
-`$ git clone https://github.com/puglisac/coursera c-sharp-2-ex4.git`
+`$ git clone https://github.com/puglisac/coursera c-sharp-2-ex5.git`
 
-Open the file "Exercise4.sln"
+Open the file "Exercise5.sln"
